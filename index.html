@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ポートフォリオ</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/index.css">
+
+<!--CSS添付-->
+<link rel="stylesheet" href="css/test.css">
+<!-- カルーセルモジュール用CSS：トップのみ -->
+<link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
+</head>
+
+<body>
+<!-- 共通ヘッダー -->
+<header>
+<div class="headerContent">
+  <div class="logo"><a href="index.html"><img src="images/logo.png" alt="ポートフォリオ"></a></div>
+</div>
+<nav class="globalNavigation">
+  <ul>
+    <li class="current"><a href="index.html">ホーム</a></li>
+      <!-- リンク先を記述 -->
+    <li><a href="news.html">インフォメーション</a></li>
+      <li><a href="gallery.html">ギャラリー</a></li>
+    <li><a href="contact.html">コンタクト</a></li>
+  </ul>
+</nav>
+<!-- カルーセルモジュール：トップのみ -->
+<div class="mainImage">
+  <div class="imageScroll">
+      <div> 
+        <!-- メイン画像挿入 --> 
+          <img src="images/mainImage_01.jpg" alt="">
+      </div>
+    <div><img src="images/mainImage_02.jpg" alt=""></div>
+    <div><img src="images/mainImage_03.jpg" alt=""></div>
+  </div>
+</div>
+<!-- おわり／カルーセルモジュール：トップのみ -->
+</header>
+<!-- おわり／共通ヘッダー -->
+<!-- メインコンテンツ -->
+<main>
+<section class="product">
+    <!-- 見出し：ギャラリー -->
+    <h2 class="color">ギャラリー</h2>
+  <ul class="productList">
+    <li class="new">
+        <div class="image"> <img src="images/photo_01.jpg" alt="" class="border"> </div>
+      <div class="info">
+        <h3>シュレディンガーの猫</h3>
+          <p class="summary">新作です。</p>
+          <p class="readMore"><a href="gallery.html">ギャラリーで見る</a></p>
+      </div>
+    </li>
+    <li class="new">
+        <div class="image"> <img src="images/photo_02.jpg" alt="" class="border"> </div>
+      <div class="info">
+        <h3>聡明なカラス</h3>
+        <p class="summary">現代美術展で展示されました。</p>
+          <p class="readMore"><a href="gallery.html">ギャラリーで見る</a></p>
+      </div>
+    </li>
+  </ul>
+    <div><a href="gallery.html" class="moreLink">作品一覧をみる</a></div>
+</section>
+<section class="news">
+    <!-- 見出し：インフォメーション -->
+    <h2 class="color">インフォメーション</h2>
+  <ul class="newsList">
+    <li class="new">
+        <h3>週刊ぶんぶんにインタビューが掲載されました</h3>
+        <p class="date">
+          <!--コンピュータが日付を認識できるよう「datetime」を追記-->
+          <time datetime="2023-05-05">2023年5月5日</time>
+        </p>
+        <p class="readMore"> 
+          
+          <!-- news.html内の「id="news20230505"」の記事へリンクする --> 
+          <a href="news.html#news20230505">詳しくみる</a> </p>
+    </li>
+    <li class="new">
+        <h3>ショッピングモールLINK内で個展が開催されます</h3>
+        <p class="date">
+          <time datetime="2023-02-08">2023年2月8日</time>
+        </p>
+        <p class="readMore"> 
+          <!-- news.html内の「id="news20230208"」の記事へリンクする --> 
+          <a href="news.html#news20230208">詳しくみる</a></p>
+    </li>
+  </ul>
+  <div><a href="news.html" class="moreLink">すべてのお知らせをみる</a></div>
+</section>
+</main>
+<!-- おわり／メインコンテンツ -->
+<!-- 共通フッター -->
+<footer>
+<div class="siteLinks">
+<div class="inner">
+  <div class="logo"><img src="images/logo_square.png" alt="ポートフォリオ"></div>
+  <div class="linkList">
+    <dl>
+      <dt><a href="index.html">ホーム</a></dt>
+    </dl>
+    <dl>
+      <dt><a href="news.html">インフォメーション</a></dt>
+          <dd><a href="news.html#2023">2023年</a></dd>
+          <dd><a href="news.html#2022">2022年</a></dd>
+    </dl>
+    <dl>
+          <dt><a href="gallery.html">ギャラリー</a></dt>
+          <dd><a href="gallery.html#2023">2023年</a></dd>
+          <dd><a href="gallery.html#2022">2022年</a></dd>
+    </dl>
+    <dl>
+          <dt><a href="contact.html">バイオグラフィー</a></dt>
+          <dd><a href="contact.html">バイオグラフィー</a></dd>
+          <dd><a href="contact.html">コンタクト</a></dd>
+    </dl>
+  </div>
+</div>
+</div>
+<p><small class="copyright"> Copyright (C) 2020 Link All Rights Reserved.</small></p>
+</footer>
+<!-- おわり／共通フッター --> 
+<!-- 上に戻るボタン -->
+<a href="#" id="gototop" class="gototop" data-scroll>^</a>
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/smooth-scroll.js"></script>
+<script>
+$(function() {
+  $('.imageScroll').slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+  });
+
+  smoothScroll.init();
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 200) {
+      $('#gototop').fadeIn('slow');
+    } else {
+      $('#gototop').fadeOut('slow');
+    }
+  });
+});
+
+</script>
+</body>
+
+</html>

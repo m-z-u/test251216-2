@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/***************
+  post
+****************/
+main {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+/* news-post */
+.news-post {
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.news {
+  float: left;
+  margin-right: 50px;
+  width: 700px;
+}
+
+.news img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.news-list {
+  overflow: hidden;
+}
+
+.list-title {
+  font-size: 16px;
+}
+
+.date {
+  color: #aaa;
+}

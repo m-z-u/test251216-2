@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+/***************
+  common
+****************/
+html * {
+  box-sizing: border-box;
+}
+
+body, ul{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+
+a:link,
+a:visited {
+  color:#8d6449;
+}
+
+img.border {
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 0;
+  }
+}
+
+a.gototop {
+  background-color: #8d6449;
+  bottom: 2%;
+  color: #fff;
+  display: none;
+  font-size: 2rem;
+  height: 3rem;
+  line-height: 3.8rem;
+  position: fixed;
+  right: 2%;
+  text-align: center;
+  text-decoration: none;
+  width: 3rem;
+}
+
+/***************
+  header
+****************/
+
+/* headerContent */
+
+header .headerContent {
+  margin: 0 auto;
+  padding: 10px 0;
+  max-width: 1000px;
+}
+
+header .headerContent .logo img {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  header .headerContent .logo img {
+    margin-left: 0;
+    width: 300px;
+  }
+}
+
+/* globalNavigation */
+
+header nav.globalNavigation {
+  background: linear-gradient(to bottom,  #ffffff 0%,#eaeaea 99%);
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #e2e2e2;
+}
+
+header nav.globalNavigation ul {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1000px;
+  list-style-type: none;
+}
+
+header nav.globalNavigation ul li {
+  border-left: 1px solid #e2e2e2;
+  float: left;
+  font-size: 11px;
+  width: 25%;
+}
+
+header nav.globalNavigation ul li:last-child {
+  border-right: 1px solid #e2e2e2;
+}
+
+header nav.globalNavigation ul li a {
+  color: #777;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  header nav.globalNavigation ul li a {
+    padding: 10px 30px;
+  }
+}
+
+header nav.globalNavigation ul li a:hover {
+  background: #f8f8f8;
+}
+
+header nav.globalNavigation ul li.current {
+  background: #f2f2f2;
+  border-bottom: 3px solid #8d6449;
+  font-weight: bold;
+}
+
+header nav.globalNavigation ul li.current a {
+  background: none;
+  margin-bottom: -3px;
+}
+
+/* mainImage */
+
+header .mainImage {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  header .mainImage {
+    height: 440px;
+    margin: 30px auto 50px;
+    padding: 0;
+    max-width: 1000px;
+  }
+}
+
+header .mainImage .imageScroll {
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+header .mainImage img {
+  display: block;
+  margin: 0 auto;
+  max-height: auto;
+  max-width: 100%;
+}
+
+/***************
+  footer
+****************/
+
+/* footerNavigation */
+
+footer p:last-child {
+  margin: 0;
+}
+
+footer .siteLinks {
+  background: #d6c6af;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  footer .siteLinks {
+    padding: 30px;
+  }
+}
+
+footer .siteLinks .inner {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1000px;
+}
+
+@media (min-width: 768px) {
+  footer .siteLinks .logo {
+    float: left;
+    width: 200px;
+  }
+}
+
+footer .siteLinks .linkList {
+  overflow: hidden;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer .siteLinks .linkList {
+    text-align: left;
+  }
+}
+
+footer .siteLinks .logo img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+}
+
+@media (min-width: 768px) {
+  footer .siteLinks .logo img {
+    margin-left: 0;
+    width: 120px;
+  }
+}
+
+footer .siteLinks .linkList dl {
+    font-size: 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  footer .siteLinks .linkList dl {
+    float: left;
+    font-size: 12px;
+    width: 25%;
+    margin-bottom: 0;
+  }
+}
+
+footer .siteLinks .linkList dl dt {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer .siteLinks .linkList dl dt a {
+  color:#8d6449;
+  text-decoration: none;
+}
+
+footer .siteLinks .linkList dl dd {
+  display: inline;
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  footer .siteLinks .linkList dl dd {
+    display: block;
+  }
+}
+
+footer .siteLinks .linkList dl dd a {
+  color:#444;
+  text-decoration: none;
+}
+
+footer small {
+  background: #222;
+  color: #f2f2f2;
+  display: block;
+  font-size: 11px;
+  padding: 10px;
+  text-align: center;
+}

@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ポートフォリオ</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/page.css">
+<link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+  <!-- 共通ヘッダー -->
+  <header>
+    <div class="headerContent">
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="ポートフォリオ"></a></div>
+    </div>
+    <nav class="globalNavigation">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+      <li class="current"><a href="news.html">インフォメーション</a></li>
+      <li><a href="gallery.html">ギャラリー</a></li>
+        <li><a href="contact.html">コンタクト</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- おわり／共通ヘッダー -->
+  <!-- メインコンテンツ -->
+  <main class="content thin news">
+  <h1>インフォメーション</h1>
+    <ul class="localNavigation">
+    <li> 
+      <!-- ページ内リンクを挿入 --> 
+      <a href="#2023">2023年</a> </li>
+    <li> <a href="#2022">2022年</a></li>
+  </ul>
+  <p class="year" id="2023">2023年</p>
+    <div class="newsList">
+    <article id="news20230505">
+      <h2>週刊ぶんぶんに作品が掲載されました</h2>
+      <p class="date">
+        <time datetime="2023-05-05">2023年5月5日</time>
+      </p>
+      <div class="summary">
+        <div><img src="images/news_01.jpg" alt=""></div>
+        <p>週刊ぶんぶんに作品が掲載されました。私の作品だけでなく、他の素敵なアーティストたちの作品もたくさん掲載されているので、ぜひチェックしてみてください。私も含め、それぞれのアーティストたちのインタビューも掲載されています。</p>
+      </div>
+    </article>
+    <article id="news20230208">
+      <h2>ショッピングモールLINK内で個展が開催されます</h2>
+      <p class="date">
+        <time datetime="2023-02-08">2023年2月8日</time>
+      </p>
+      <div class="summary">
+        <div><img src="images/news_02.jpg" alt=""></div>
+        <p>ショッピングモール内のホールで個展をやらせていただくことになりました。お買い物の帰りに是非お立ち寄りください。</p>
+      </div>
+    </article>
+    <!-- ページ内リンクを可能にするためIDを記述-->
+    <p class="year" id="2022">2022年</p>
+    
+    <article id="news20220614">
+        <h2>現代美術展に参加します</h2>
+      <p class="date">
+        <time datetime="2022-06-14">2022年6月14日</time>
+      </p>
+        <div class="summary">
+        <div><img src="images/mainImage_01.jpg" alt=""></div>
+          <p>現代美術展は、陶芸、写真、書芸、絵画を対象にした美術展です。普段の目に触れることの少ない、特別なアーティストたちも多く参加することで知られています。
+              独創的なスタイルや、現代社会に対するインスピレーションなどに触れてみてください。</p>
+        <p>イベント会場の確認、参加申し込みは 
+          <!-- 外部リンクを挿入 --> 
+          <a href="https://www.aviva.co.jp">こちら</a></p>
+        </div>
+      </article>
+    </div>
+  </main>
+  <!-- おわり／メインコンテンツ -->
+<!-- 共通フッター -->
+<footer>
+  <div class="siteLinks">
+    <div class="inner">
+      <div class="logo"><img src="images/logo_square.png" alt="ポートフォリオ"></div>
+      <div class="linkList">
+        <dl>
+          <dt><a href="index.html">ホーム</a></dt>
+        </dl>
+        <dl>
+          <dt><a href="news.html">インフォメーション</a></dt>
+          <dd><a href="news.html#2023">2023年</a></dd>
+          <dd><a href="news.html#2022">2022年</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="gallery.html">ギャラリー</a></dt>
+          <dd><a href="gallery.html#2023">2023年</a></dd>
+          <dd><a href="gallery.html#2022">2022年</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="contact.html">バイオグラフィー</a></dt>
+          <dd><a href="contact.html#detail">バイオグラフィー</a></dd>
+          <dd><a href="contact.html#contact">コンタクト</a></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <p><small class="copyright"> Copyright (C) 2020 Link All Rights Reserved.</small></p>
+</footer>
+<!-- おわり／共通フッター --> 
+<!-- 上に戻るボタン --> 
+<a href="#" id="gototop" class="gototop" data-scroll>^</a> 
+
+<!-- jQuery https://jquery.com/download/ --> 
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script> 
+<!-- スムーズスクロール https://github.com/cferdinandi/smooth-scroll--> 
+<script type="text/javascript" src="js/smooth-scroll.js"></script> 
+<script>
+$(function(){
+
+  /* スムーススクロールの初期化処理 */
+  smoothScroll.init();
+
+  /* トップへ戻るボタンの表示処理 */
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 200) {
+      $('#gototop').fadeIn('slow');
+    } else {
+      $('#gototop').fadeOut('slow');
+    }
+  });
+});
+</script>
+</body>
+</html>

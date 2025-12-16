@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ポートフォリオ</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/page.css">
+<link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+<!-- 共通ヘッダー -->
+<header>
+  <div class="headerContent">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="ポートフォリオ"></a></div>
+  </div>
+  <nav class="globalNavigation">
+    <ul>
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="news.html">インフォメーション</a></li>
+      <li><a href="gallery.html">ギャラリー</a></li>
+      <li class="current"><a href="contact.html">コンタクト</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- おわり／共通ヘッダー --> 
+<!-- メインコンテンツ -->
+<main class="company">
+  <section class="detail" id="detail">
+    <h2>バイオグラフィー</h2>
+    <div class="scroll"> <img src="images/mainImage_01.jpg" alt="生活をデザインする">
+      <h3>リンク太郎</h3>
+      <p>フリーランスのイラストレータとして透明水彩による制作を行っている。
+        紙やキャンバス、鉛筆や絵の具など、画材からしか生まれない表現+デジタルツールを利用した独特な表現が人気で、
+        近年は多くのアーティストのCDジャケットやパッケージのデザインに携わっている。</p>
+      <table>
+        <tr>
+          <th>2023年5月5日</th>
+          <td>週刊ぶんぶんに書きおろし掲載</td>
+        </tr>
+        <tr>
+          <th>2023年2月8日</th>
+          <td>ショッピングモール内 個展開催</td>
+        </tr>
+        <tr>
+          <th>2022年6月14日</th>
+          <td>現代美術展に作品展示が決定</td>
+        </tr>
+        <tr>
+          <th>2021年5月4日</th>
+          <td>作品「無邪気な少女」が現代絵画コンテストで大賞を受賞</td>
+        </tr>
+        <tr>
+          <th>2021年4月3日</th>
+          <td>作曲家と共同制作したMVがインターネットで300万再生突破</td>
+        </tr>
+        <tr>
+          <th>2020年</th>
+          <td>フリーランスのイラストレータとして独立</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <!-- お問い合わせフォーム -->
+  <section class="contact" id="contact">
+    <div class="inner">
+      <h2>コンタクト</h2>
+      <form action="">
+        <p>
+          <label for="name-field">お名前 <span class="required"> *必須</span></label>
+          <br>
+          <!-- 「例）日本　太郎」という入力例を表示する-->
+          <input type="text" name="name" id="name-field" placeholder="例）日本 太郎" required>
+        </p>
+        <p>
+          <label for="email-field">メールアドレス <span class="required"> *必須</span></label>
+          <br>
+          <input type="email" name="email" id="email-field" placeholder="例）sample@example.com" required>
+        </p>
+        <p>
+          <label for="select-field">お問い合わせの種類</label>
+          <br>
+          <select name="select" id="select">
+            <option value="">選択してください</option>
+              
+            <!--選択項目を追加する-->
+            <option value="出演の依頼">出演の依頼</option>
+            <option value="作品の依頼">作品の依頼</option>
+            <option value="その他">その他</option>
+          </select>
+        </p>
+        <p>
+          <label for="comment">内容（1000文字以内）</label>
+          <br>
+          <textarea name="comment" id="comment"></textarea>
+        </p>
+        <p class="buttonArea">
+            <!--送信ボタンの作成-->
+            
+          <input type="submit" name="submit" value="送信する" id="submit">
+        </p>
+      </form>
+    </div>
+  </section>
+  <!-- おわり／お問い合わせフォーム --> 
+</main>
+<!-- おわり／メインコンテンツ --> 
+<!-- 共通フッター -->
+<footer>
+  <div class="siteLinks">
+    <div class="inner">
+      <div class="logo"><img src="images/logo_square.png" alt="ポートフォリオ"></div>
+      <div class="linkList">
+        <dl>
+          <dt><a href="index.html">ホーム</a></dt>
+        </dl>
+        <dl>
+          <dt><a href="news.html">インフォメーション</a></dt>
+          <dd><a href="news.html#2023">2023年</a></dd>
+          <dd><a href="news.html#2022">2022年</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="gallery.html">ギャラリー</a></dt>
+          <dd><a href="gallery.html#2023">2023年</a></dd>
+          <dd><a href="gallery.html#2022">2022年</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="contact.html">バイオグラフィー</a></dt>
+          <dd><a href="contact.html#detail">バイオグラフィー</a></dd>
+          <dd><a href="contact.html#contact">コンタクト</a></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <p><small class="copyright"> Copyright (C) 2020 Link All Rights Reserved.</small></p>
+</footer>
+<!-- おわり／共通フッター --> 
+<!-- 上に戻るボタン --> 
+<a href="#" id="gototop" class="gototop" data-scroll>^</a> 
+
+<!-- jQueryの挿入 --> 
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script> 
+
+<!-- スムーズスクロール https://github.com/cferdinandi/smooth-scroll--> 
+<script type="text/javascript" src="js/smooth-scroll.js"></script> 
+<script>
+$(function(){
+
+  /* スムーススクロールの初期化処理 */
+  smoothScroll.init();
+
+  /* トップへ戻るボタンの表示処理 */
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 200) {
+      $('#gototop').fadeIn('slow');
+    } else {
+      $('#gototop').fadeOut('slow');
+    }
+  });
+});
+</script>
+</body>
+</html>

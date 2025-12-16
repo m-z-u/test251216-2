@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/***************
+  post
+****************/
+ul {
+  margin: 1em 0;
+  padding-left: 40px;
+}
+main {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+/* product-post */
+.product-post {
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.product-photo {
+  float: left;
+  margin-right: 80px;
+  width: 460px;
+}
+
+.product-photo img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.product-info {
+  overflow: hidden;
+}
+
+.product-title {
+  /* 左画像と位置を揃えるためデフォルトのマージンを削除 */
+  margin-top: 0;
+}
+
+.product-title span {
+  font-size: 16px;
+}
+
+.color-list {
+  overflow: hidden;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.color-list li {
+  float: left;
+  margin: 0 20px 0 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.red {
+   background: #f23c1f;
+}
+
+.pink {
+  background: #feb4b4;
+}
+
+.blue {
+  background: #29b9ff;
+}
+
+.yellow {
+  background: #fec84c;
+}
+
+.green {
+  background: #4bffd0;
+}
+
+.features {
+  margin-left: 20px;
+}
+
+.features {
+    font-weight: bold;
+}
+
+.spec-list {
+    width: 100%;
+}
+
+.spec-list tr:nth-child(odd) {
+    background: #f8f8f8;
+}
+
+.spec-list th {
+    text-align: left;
+}
+
+.cart {
+  margin-top: 30px;
+  padding: 10px 0 10px 0;
+  width: 230px;
+  text-align: center;
+  color: #fff;
+  background: #319dc1;
+  border-radius: 20px;
+  cursor: pointer;
+}

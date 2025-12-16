@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*コンタクトフォームの幅調整*/
+.contact form {
+  margin: 30px auto 0;
+  max-width: 600px;
+}
+/* ボタンを中央に配置する / ボタン内テキストを中央揃え*/
+.contact form p:last-child {
+  margin: 0 auto;
+  text-align: center;
+}
+/*「お名前」「メールアドレス」のtypeを追記*/
+input[type="text"], input[type="email"], select {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}

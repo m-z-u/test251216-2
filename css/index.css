@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+/***************
+  main
+****************/
+
+main {
+  margin: 0 auto 100px;
+  max-width: 1000px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    text-align: left;
+  }
+}
+/*
+h3 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+*/
+
+/* product */
+
+@media (min-width: 768px) {
+  .product {
+    float: left;
+    width: 100%;
+    margin: 0 0 0 -400px;
+  }
+  .product .productList, .product h2, .product .moreLink {
+    margin-left: 400px;
+  }
+}
+
+.product .productList li {
+  margin-bottom: 40px;
+  list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  .product .productList li {
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+}
+
+.product .productList li .image {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .product .productList li .image {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.product .productList li .image img {
+  width: 100%;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .product .productList li .image img {
+    width: 200px;
+  }
+}
+
+.product .productList li .info {
+  margin-bottom: 10px;
+}
+
+/* news */
+
+@media (min-width: 768px) {
+  .news {
+    float: right;
+    width: 300px;
+  }
+}
+
+.news .newsList li {
+  margin-bottom: 30px;
+  list-style-type: none;
+}
+
+section {
+  margin-right: 0;
+}
+
+/***************
+  test
+****************/
+
+/*見出しに装飾を行う*/
+.color{
+  color: #96514d;
+}
+
+/*見出しに装飾を行う*/
+.newsList li h3 {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+/*インフォメーション内の日付の色*/
+.newsList li .date {
+  color: #b79b5b;
+}
+
+/*「作品一覧をみる」「すべてのお知らせをみる」*/
+.moreLink {
+  border: 1px solid #8d6449;
+  display: block;
+  padding: 10px;
+  color: #8d6449;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*カーソルを合わせた時、色が変わる*/
+.moreLink:hover {
+  background: #8d6449;
+  color: #ffffff;
+}
+
+
+/***************
+  footer
+****************/

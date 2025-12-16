@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ポートフォリオ</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/page.css">
+<link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+<!-- 共通ヘッダー -->
+<header>
+  <div class="headerContent">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="ポートフォリオ"></a></div>
+  </div>
+  <nav class="globalNavigation">
+    <ul>
+      <!--リストタグでリンクの作成・ID付与を行い、グローバルナビゲーションを作成する-->
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="news.html">インフォメーション</a></li>
+      <li class="current"><a href="gallery.html">ギャラリー</a></li>
+      <li><a href="contact.html">コンタクト</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- おわり／共通ヘッダー --> 
+<!-- メインコンテンツ -->
+<main class="product">
+  <h1>ギャラリー</h1>
+  <ul class="localNavigation">
+    <li><a href="#2023" data-scroll>2023年</a></li>
+    <li><a href="#2022" data-scroll>2022年</a></li>
+    <!--作品最上部に移動できるよう、ページ内リンクを実装-->
+    <li><a href="#2021" data-scroll>2021年</a></li>
+  </ul>
+  <ul class="productList">
+    <li id="2023"> <img src="images/photo_01.jpg" alt="" class="border">
+      <div class="info">
+        <h2>シュレディンガーの猫</h2>
+        <!--コンピュータが日付を認識できるよう追記--> 
+        <time datetime="2023-05-05">2023年5月5日</time> 
+        <div class="summary">
+          <p>新作です。</p>
+        </div>
+      </div>
+    </li>
+    <!--作品最上部に移動できるよう、ページ内リンクを実装-->
+    <li id="2022"> <img src="images/photo_02.jpg" alt="" class="border">
+      <div class="info">
+        <h2>聡明なカラス</h2>
+        <time datetime="2022-06-14">2022年6月14日</time>
+        <div class="summary">
+          <p>現代美術展で展示されました。</p>
+        </div>
+      </div>
+    </li>
+    <li> <img src="images/photo_03.jpg" alt="" class="border">
+      <div class="info">
+        <h2>白いウサギ / 蒼い鼠</h2>
+        <time datetime="2022-06-14">2022年6月14日</time>
+        <div class="summary">
+          <p>現代美術展で展示されました。</p>
+        </div>
+      </div>
+    </li>
+    <li> <img src="images/photo_04.jpg" alt="" class="border">
+      <div class="info">
+        <h2>無邪気な少女</h2>
+        <time datetime="2021-05-04">2022年5月4日</time>
+        <div class="summary">
+          <p>現代絵画コンテストで大賞を受賞しました。</p>
+        </div>
+      </div>
+    </li>
+    <li id="2021"> <img src="images/photo_05.jpg" alt="" class="border">
+      <div class="info">
+        <h2>未知なる山</h2>
+        <time datetime="2021-01-016">2021年1月16日</time>
+        <div class="summary">
+          <p>登山した後に描いた作品です。</p>
+        </div>
+      </div>
+    </li>
+    <li> <img src="images/photo_06.jpg" alt="" class="border">
+      <div class="info">
+        <h2>透明な昼</h2>
+        <time datetime="2021-01-05">2021年1月5日</time>
+        <div class="summary">
+          <p>初めて開催した個展のメインビジュアルです。</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</main>
+<!-- おわり／メインコンテンツ --> 
+<!-- 共通フッター -->
+<footer>
+  <div class="siteLinks">
+    <div class="inner">
+      <div class="logo"><img src="images/logo_square.png" alt="ポートフォリオ"></div>
+      <div class="linkList">
+        <dl>
+          <dt><a href="index.html">ホーム</a></dt>
+        </dl>
+        <dl>
+          <dt><a href="news.html">インフォメーション</a></dt>
+          <dd><a href="news.html#2021">2023年</a></dd>
+          <dd><a href="news.html#2020">2022年</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="gallery.html">ギャラリー</a></dt>
+          <dd><a href="gallery.html#2023">2023年</a></dd>
+          <dd><a href="gallery.html#2022">2022年</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="contact.html">バイオグラフィー</a></dt>
+          <dd><a href="contact.html#detail">バイオグラフィー</a></dd>
+          <dd><a href="contact.html#contact">コンタクト</a></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <p><small class="copyright"> Copyright (C) 2020 Link All Rights Reserved.</small></p>
+</footer>
+<!-- おわり／共通フッター --> 
+<!-- 上に戻るボタン --> 
+<a href="#" id="gototop" class="gototop" data-scroll>^</a> 
+
+<!-- jQuery https://jquery.com/download/ --> 
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script> 
+<!-- スムーズスクロール https://github.com/cferdinandi/smooth-scroll--> 
+<script type="text/javascript" src="js/smooth-scroll.js"></script> 
+<script>
+$(function(){
+
+  /* スムーススクロールの初期化処理 */
+  smoothScroll.init();
+
+  /* トップへ戻るボタンの表示処理 */
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 200) {
+      $('#gototop').fadeIn('slow');
+    } else {
+      $('#gototop').fadeOut('slow');
+    }
+  });
+});
+</script>
+</body>
+</html>
